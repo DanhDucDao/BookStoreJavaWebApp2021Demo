@@ -1,0 +1,162 @@
+.right-column, .left-column, .center-column {
+	position: relative;
+}
+
+.detail-container {
+	display: grid;
+	grid-template-columns: 30% 45% 25%;
+}
+
+@media screen and (max-width: 960px) {
+	.detail-container {
+		grid-template-columns: 70% 30%;
+	}
+	.left-column {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.left-column img {
+		width: 50%;
+	}
+}
+
+
+@media screen and (max-width: 512px) {
+	.detail-container {
+		grid-template-columns: 100%;
+	}
+
+	.left-column {
+		grid-column-end: 2;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.left-column img {
+		width: 100%;
+	}
+
+}
+.left-column{
+	margin-top: 15px;
+}
+
+.left-column img {
+	max-width: 100%;
+	max-height: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+.center-column, .right-column {
+	padding: 15px;
+}
+
+.center-column .label, .center-column .content {
+	display: inline;
+}
+
+.center-column .detail-line {
+	margin-bottom: 10px;
+}
+
+.center-column .label {
+	font-weight: bold;
+}
+
+.center-column .content {
+	font-style: italic;
+}
+
+.right-column {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	height: fit-content;
+}
+
+.advice {
+	padding: 0px;
+}
+.advice .advice-item {
+	font-size: smaller;
+	font-weight: lighter;
+	list-style: none;
+	list-style-type: none;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #FDFF8F;
+	margin: 5px auto;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.title {
+	font-size: 30px;
+}
+
+.price {
+	color: #FF5151;
+	font-weight: bold;
+}
+.quantity {
+  position: relative;
+}
+
+.quantity input[type='number'] {
+	text-align: center;
+	width: 50px;
+}
+
+form button[type='submit'] {
+	border: none;
+	padding: 5px;
+	border-radius: 30px;
+	width: 100%;
+	background-color: #FFF323;
+	box-shadow: 1px 0px 2px;
+}
+
+form button[type='submit']:hover {
+	background-color: #FFCA03;
+}
+
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100px;
+	overflow: hidden;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	margin: 0 auto;
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px  #888;
+	width: 80%;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+

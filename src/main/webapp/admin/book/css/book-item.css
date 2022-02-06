@@ -1,0 +1,23 @@
+img {
+
+	max-width: 100%;
+}
+
+.row {
+	margin-top: 20px;
+}
+
+.label, .content{
+	display: inline;
+}
+
+.label {
+	font-weight: bold;
+}
+
+.detail-line {
+	display: block;
+}
+
+
+

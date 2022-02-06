@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#loadImage {
+	margin: 0 auto;
+	margin-top: 10px;
+	display: block;
+}
+
+img {
+	max-height: 300px;
+	max-width: 300px;
+}

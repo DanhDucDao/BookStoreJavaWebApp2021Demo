@@ -1,0 +1,79 @@
+.image-container {
+	text-align: center;
+	height: 150px;
+	overflow: hidden;
+}
+
+.image-container img{
+	height: 100%;
+	margin: 0 auto;
+}
+
+.cart-footer {
+	text-align: right;
+}
+
+
+
+.cart-footer p{
+	display: inline-block;
+	text-align: left;
+}
+
+.total-price .label {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: rgba(0, 0, 0, 0.7)
+}
+
+.total-price .money {
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+
+.button-nav a button {
+	height: 30px;
+	width: 150px;
+	text-align: center;
+	font-size: 13px;
+	padding: 5px 15px 5px 15px;
+	border-radius: 30px;
+	color: black;
+	outline: none;
+	border: none;
+}
+
+.lbcon {
+	display: inline-block;
+	position: relative;
+	height: 30px;
+	top:5px;
+	left: -35px;
+
+}
+
+.lbcon p {
+	position: absolute;
+}
+
+.button-nav a:visited {
+	text-decoration: none;
+}
+
+.button-nav a button.button-shopping {
+	background-color: #FAEDC6;
+}
+
+.button-nav a button.button-shopping:hover {
+	background-color: #FABB51;
+}
+
+.button-nav a button.button-checkout {
+	background-color: #F9C5D5;
+}
+
+.button-nav a button.button-checkout:hover {
+	background-color: #F2789F;
+}
